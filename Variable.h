@@ -55,14 +55,14 @@ void FloatToByte(float Num,uint8_t *Byte);
 void ByteToInt(int &Num,uint8_t *Byte);
 void IntToByte(int Num,uint8_t *Byte);
 /*Uint*/
-void ByteToUint(unsigned int &Num,uint8_t *Byte);
-void UintToByte(unsigned int Num,uint8_t *Byte);
+void ByteToUint(uint16_t &Num,uint8_t *Byte);
+void UintToByte(uint16_t Num,uint8_t *Byte);
 /*long*/
 void ByteToLong(long &Num,uint8_t *Byte);
 void LongToByte(long Num,uint8_t *Byte);
 /*ULong*/
-void ByteToUlong(unsigned long &Num,uint8_t *Byte);
-void UlongToByte(unsigned long Num,uint8_t *Byte);
+void ByteToUlong(uint32_t &Num,uint8_t *Byte);
+void UlongToByte(uint32_t Num,uint8_t *Byte);
 
 
 
@@ -118,7 +118,7 @@ void IntToByte(int Num,uint8_t *Byte)
 }
 /***************************************************/
 /*合并Uint*/
-void ByteToUint(unsigned int &Num,uint8_t *Byte)
+void ByteToUint(uint16_t &Num,uint8_t *Byte)
 {
 	Hex2Uint16 Conversion;
 	for(byte a =0;a<2;a++)
@@ -130,7 +130,7 @@ void ByteToUint(unsigned int &Num,uint8_t *Byte)
 
 /*拆解Uint*/
 
-void UintToByte(unsigned int Num,uint8_t *Byte)
+void UintToByte(uint16_t Num,uint8_t *Byte)
 {
 	Hex2Uint16 Conversion;
 	Conversion.Val = Num; 
@@ -168,7 +168,7 @@ void LongToByte(long Num,uint8_t *Byte)
 
 /***************************************************/
 /*合并Ulong*/
-void ByteToUlong(unsigned long &Num,uint8_t *Byte)
+void ByteToUlong(uint32_t &Num,uint8_t *Byte)
 {
 	Hex2Uint32 Conversion;
 	for(byte a =0;a<4;a++)
@@ -180,7 +180,7 @@ void ByteToUlong(unsigned long &Num,uint8_t *Byte)
 
 /*拆解Ulong*/
 
-void UlongToByte(unsigned long Num,uint8_t *Byte)
+void UlongToByte(uint32_t Num,uint8_t *Byte)
 {
 	Hex2Uint32 Conversion;
 	Conversion.Val = Num; 

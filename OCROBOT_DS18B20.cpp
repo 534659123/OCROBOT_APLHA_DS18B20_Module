@@ -1,6 +1,6 @@
 #include "OCROBOT_DS18B20.h"
 #include <Wire.h>
-#include "VariableConversion.h"
+#include "Variable.h"
 
 DS18B20::DS18B20(byte Addr)
 {
