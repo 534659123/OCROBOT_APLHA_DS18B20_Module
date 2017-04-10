@@ -7,6 +7,16 @@
 #include "WProgram.h"
 #endif
 
+#ifndef	WIRE_H_
+#define WIRE_H_
+#include <Wire.h>
+#endif
+
+#ifndef	VARIABLE_H_
+#define VARIABLE_H_
+#include "Variable.h"
+#endif
+
 #define TemperatureRead 2
 #define IDRead 1
 
