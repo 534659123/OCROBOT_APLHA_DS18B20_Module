@@ -3,6 +3,9 @@
 2017年1月6日
 数据类型拆分
 */
+#ifndef VARIABLE_H_
+#define VARIABLE_H_
+
 #if defined(ARDUINO) && ARDUINO >= 100
  #include "Arduino.h"
 #else
@@ -190,3 +193,5 @@ static void UlongToByte(uint32_t Num,uint8_t *Byte)
 	}
 	
 }
+
+#endif
